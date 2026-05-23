@@ -6,11 +6,65 @@
     <title>Accueil - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<footer>
-    <p>© 2026 Ange HOUNZANME - Tous droits réservés</p>
-</footer>
 <body>
-<nav>
+<header>
+    <nav class="navbar">
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="skills.html">Compétences</a></li>
+            <li><a href="projects.html">Projets</a></li>
+            <li><a href="education.html">Éducation</a></li>
+            <li><a href="experience.html">Expérience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+</header>
+<section class="hero">
+    <div class="hero-text">
+        <h1>Bienvenue sur mon Portfolio</h1>
+        <div class="hero-image">
+        <img src="images/IMG_20260516_140704_550 (1).jpg" alt="IMG_20260516_140704_550 (1)">
+        </div>
+        <p>
+            Bonjour, je suis <strong>Ange HOUNZANME</strong>, étudiant en <strong><mark>Mathématiques, Informatique 
+            et Applications</mark></strong> (MIA), passionné par le développement web, la programmation, les technologies
+            numériques et l’innovation informatique. À travers ce portfolio, je présente mes compétences, mes projets
+            académiques et mes expériences dans le domaine de l’informatique et du digital. <br><br>  
+            Mon objectif est de développer des solutions modernes, utiles et innovantes grâce aux technologies du web et de la programmation.
+        </p>
+        <a href="projects.html" class="btn">
+            Voir mes projets
+        </a>
+
+    </div>
+
+</section>
+<section class="tech">
+
+    <h2>Technologies</h2>
+
+    <div class="tech-container">
+
+        <div class="tech-box">HTML</div>
+        <div class="tech-box">CSS</div>
+        <div class="tech-box">Python</div>
+        <div class="tech-box">GitHub</div>
+        <div class="tech-box">Cybersécurité</div>
+        <div class="tech-box">C Programming</div>
+
+    </div>
+
+</section>
+<footer>
+    <h1>Ange HOUNZANME</h1><br><br>
+    <p>Étudiant en Mathématiques, Informatique et Application, passionné par la technologie et l'innovation.</p>
+    <h2>Navigation</h2>
+    <p>
+    <nav>
     <a href="index.html">Accueil</a>
     <a href="skills.html">Compétences</a>
     <a href="projects.html">Projets</a>
@@ -18,26 +72,13 @@
     <a href="experience.html">Expérience</a>
     <a href="contact.html">Contact</a>
 </nav>
-
-<div class="container">
-    <div class="card">
-        <h1>Bienvenue sur mon Portfolio</h1>
-
-        <img src="images/profile.jpg" alt="Photo de profil">
-
-        <p>
-        Bonjour et bienvenue sur mon portfolio.<br><br>
-
-Je suis <strong>Ange HOUNZANME</strong>, étudiant en <strong><mark>Mathématiques, Informatique et Applications</mark></strong> (MIA), 
-passionné par le développement web, la programmation, les technologies numériques et l’innovation informatique.
-À travers ce portfolio, je présente mes compétences, mes projets académiques et mes expériences dans le domaine 
-de l’informatique et du digital.   
-        
-Mon objectif est de développer des solutions modernes, utiles et innovantes grâce aux technologies du web et de la programmation.
-        
-        </p>
-    </div>
-</div>
-
+    </p>
+    <p>© 2026 Ange HOUNZANME - Tous droits réservés</p>
+</footer>
+<script>
+function toggleMenu(){
+    document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
 </body>
 </html>
